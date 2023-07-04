@@ -1,0 +1,42 @@
+{
+  "name" :"hardhat-fund-me",
+  "author": "Ibrahim Khan",
+  "version":"1.0.0",
+  "resolutions": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13"
+  },
+
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.3",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.1.4",
+    "ethers": "^6.6.2",
+    "hardhat": "^2.16.1",
+    "hardhat-deploy": "^0.11.34",
+    "hardhat-deploy-ethers": "^0.4.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "0.8.3",
+    "typechain": "^8.1.0"
+  },
+  "dependencies": {
+    "etherscan": "^0.2.2",
+    "tags": "^2.0.10"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network sepolia",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+
+  }
+}
